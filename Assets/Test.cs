@@ -33,6 +33,8 @@ sealed class Test : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"{_pointer}/{_texture.GetNativeTexturePtr()}");
+        Debug.Log("Calling GetNativeTexturePtr()");
+        _texture.GetNativeTexturePtr();
+        Debug.Log("Done.");
     }
 }
